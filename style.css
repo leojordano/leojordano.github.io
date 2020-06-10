@@ -8,6 +8,18 @@
 section.header {
     display: flex;
 }
+
+@media screen and (max-width: 1000px) {
+    section.header {
+        justify-content: center;
+        align-items: center;
+    }
+
+    section.header .side-two {
+        display: none;
+    }
+}
+
 .side-one {
     display: flex;
     align-items: center;
@@ -104,8 +116,22 @@ section.header {
     border-radius: 20px;
     display: flex;
     -webkit-box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.75);
-box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.75);
+}
+
+@media screen and (max-width: 700px) {
+    .projects .card-project {
+        flex-direction: column;
+    }
+
+    .card-side-two {
+        display: none;
+    }
+
+    .card-side-one {
+        width: 100% !important;
+    }
 }
 
 .projects .card-project:nth-child(even) {
@@ -132,6 +158,19 @@ box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.75);
     display: flex;
     justify-content: flex-start;
     align-items: center;
+}
+
+@media screen and (max-width: 310px) {
+    .projects .card-project .card-side-one .desc {
+        height: 50px !important;
+    }
+    .projects .card-project .card-side-one {
+        font-size: 14px;
+    }
+
+    .projects .card-project .card-side-one .card-header {
+        flex-direction: column;
+    }
 }
 
 .projects .card-project .card-side-one .card-header a  {
@@ -248,6 +287,18 @@ a.plus:hover {
     display: flex;
 }
 
+@media screen and (max-width: 730px) {
+    .profile .eu {
+        margin: 0px auto;
+        width: 150px;
+        height: 225px;
+    }
+
+    .profile .container {
+        flex-direction: column;
+    }
+}
+
 .profile .container .about {
     margin: 30px auto;
     text-align: center;
@@ -281,6 +332,9 @@ footer {
     justify-content: center;
     margin-top: 30px;
     color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 footer img {
