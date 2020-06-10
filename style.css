@@ -60,6 +60,12 @@ section.header {
     flex-direction: column;
 }
 
+@media screen and (max-width: 650px) {
+    .side-menu {
+        display: none;
+    }
+}
+
 .side-menu .cont-unic-icon .cont-icon {
     z-index: 10;
     display: block;
