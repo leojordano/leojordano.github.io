@@ -189,7 +189,7 @@ section.header {
     display: flex;
     align-items: center;
 }
-.projects .card-project .card-side-one .card-header a:hover  {
+.projects .card-project .card-side-one .card-header a:nth-child(2):hover  {
     transform: scale(1.1);
 }
 
@@ -234,13 +234,8 @@ section.header {
 
 .projects .card-project .card-side-two {
     background-size: cover;
-    transition-duration: 0.2s;
     width: 50%;
 } 
-
-.projects .card-project .card-side-two:hover {
-    width: 70%;
-}
 
 a.plus {
     color: white;
