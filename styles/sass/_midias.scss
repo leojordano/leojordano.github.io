@@ -1,0 +1,25 @@
+.midias {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff;
+    box-shadow: rgba(100,100,111,.2) 0 7px 29px 0;
+    padding: .5rem;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+
+    a {
+        width: 100%;
+        display: block;
+        padding: 1rem;
+        transition: background .3s;
+        border-radius: 5px;
+        font-size: 3rem;
+        color: $black;
+
+        &:hover {
+            background: rgba(120,67,233,.2);
+        }
+    }
+}

@@ -1,0 +1,21 @@
+$white: #ffffff;
+$purple: #7843e9;
+$black: #111;
+$gray: #666;
+$lightgray: #9993;
+$textColor: #333;
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Source Sans Pro", sans-serif;
+    outline: none;
+}
+
+html, body {
+    height: 100%;
+    font-size: 62.5%;
+    background: #fafafa;
+    overflow-x: hidden;
+}

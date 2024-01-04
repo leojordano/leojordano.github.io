@@ -1,0 +1,128 @@
+section.about {
+    max-width: 80rem;
+    margin: 0px auto;
+    padding: 12rem 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: #fafafa;
+
+    h4 {
+        display: block;
+        font-size: 4rem;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        text-align: center;
+        margin-bottom: 3.5rem;
+        position: relative;
+        color: #111;
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: calc(100% + 1.5rem);
+            height: 5px;
+            width: 3rem;
+            background: #7843e9;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 5px;
+        }
+    }
+
+    p {
+        display: block;
+        text-align: center;
+        color: #555;
+        font-size: 2rem;
+        font-weight: 500;
+        max-width: 80rem;
+        margin: auto;
+        line-height: 1.6;
+    }
+
+    .content {
+        width: 100%;
+        margin-top: 9rem;
+        display: flex;
+        justify-content: space-between;
+
+        div {
+            h5 {
+                font-size: 2.8rem;
+                margin-bottom: 20px;
+            }
+
+            &:nth-child(2) {
+                flex-basis: 50%;
+
+                h5 {
+                    text-align: end;
+                }   
+            }
+        }
+
+        .experiences {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            position: relative;
+
+            .experience {
+                display: flex;
+                flex-direction: column;
+                font-size: 1.7rem;
+                letter-spacing: 1px;
+                color: $gray;
+                position: relative;
+                background-color: #fafafa;
+                z-index: 1;
+                padding: 10px 0px;
+
+                .position {
+                    color: $purple;
+                    font-weight: bold;
+                    font-size: 2.2rem;
+                    margin-bottom: 2px;
+                }
+
+                .company {
+                    font-weight: bold;
+                }
+
+                .date {
+                    font-size: 1.5rem;
+                }
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                left: 0px;
+                top: 0px;
+                height: 100%;
+                width: 5px;
+                background-color: $purple;
+            }
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: end;
+
+            div.skill {
+                padding: 1rem 2rem;
+                margin-bottom: 1.5rem;
+                margin-right: 1.5rem;
+                font-size: 1.6rem;
+                background: rgba(153,153,153,.2);
+                border-radius: 5px;
+                font-weight: 600;
+                color: #666;
+                max-width: fit-content;
+            }
+
+        }
+    }
+}

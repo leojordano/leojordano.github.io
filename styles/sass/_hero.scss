@@ -1,0 +1,99 @@
+$navheight: 70px;
+
+section.hero {
+    color: #fff;
+    background: linear-gradient(
+        to right,rgba(245,245,245,.8),
+        rgba(245,245,245,.8)),
+        url(../../images/common-bg.svg);
+    background-position: center;
+    height: calc(100vh - $navheight);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .call {
+        text-transform: uppercase;
+        position: relative;
+        top: -$navheight;
+        text-align: start;
+        color: #111;
+        max-width: 50rem;
+
+        span {
+            font-size: 1.9rem;
+            letter-spacing: 2px;
+        }
+        
+        h3 {
+            letter-spacing: 3px;
+            font-size: 4rem;
+            font-weight: 800; 
+        }
+
+        p {
+            font-size: 1.5rem;
+        }
+    }
+
+    a.btn {
+        background: $purple;
+        color: $white;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 700;
+        border-radius: 5px;
+        box-shadow: 0 5px 15px 0 rgba(0,0,0,.15);
+        transition: transform .3s;
+        padding: 1.5rem 8rem;
+        font-size: 2rem;
+        cursor: pointer;
+        border: none;
+        position: relative;
+        top: $navheight;
+        text-decoration: none;
+
+        &:hover {
+            transform: translateY(-3px);
+        }
+    }
+
+    .mouse-animation {
+        position: absolute;
+        bottom: 3%;
+        left: 50%;
+        transform: translateX(-50%);
+
+        .mouse {
+            width: 25px;
+            height: 40px;
+            border: 2px solid #333;
+            border-radius: 60px;
+            position: relative;
+            overflow: hidden;
+            
+            &::before {
+                content: '';
+                width: 5px;
+                height: 5px;
+                position: absolute;
+                top: 7px;
+                left: 50%;
+                transform: translateX(-50%);
+                background-color: #333;
+                border-radius: 50%;
+                opacity: 1;
+                animation: wheel 1.3s infinite;
+            }
+        }
+    }
+}
+
+@keyframes wheel {
+    to {
+        opacity: 0;
+        top: 27px
+    }
+}
