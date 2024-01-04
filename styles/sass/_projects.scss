@@ -106,4 +106,35 @@ section.projects {
             }
         }
     }
+
+    @media screen and (max-width: 768px) {
+        .container {
+            h4 {
+                font-size: 3rem;
+            }
+
+            p {
+                font-size: 1.8rem;
+                padding: 0px 30px;
+            }
+
+            .list {
+                flex-direction: column;
+                align-items: center;
+
+                .project {
+                    width: 100%;
+                    height: 150px;
+                }
+            }
+            
+            .disclaimer {
+                flex-direction: column;
+
+                .lead {
+                    font-size: .9rem;
+                }
+            }
+        }
+    }
 }

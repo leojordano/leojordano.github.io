@@ -56,4 +56,25 @@ footer {
             }
         }
     }
+
+    @media screen and (max-width: 768px) {
+        .container {
+            margin-bottom: $midiasbarHeight;
+
+            .content {
+                flex-direction: column;
+                align-items: center;
+                gap: 40px;
+                padding: 4rem 0;
+
+                .col {
+                    align-items: center;
+
+                    p {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
 }
